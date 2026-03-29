@@ -3,54 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A simple static site hosted on GitHub Pages." />
-  <title>Welcome | My Site</title>
+  <meta name="description" content="ABHA Fish Fry Masala — crispy, aromatic blends for shallow fry, rava fry, and seafood. Coat, fry, serve." />
+  <title>ABHA Fish Fry Masala | Crispy Fish Fry Blends</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
   <header class="site-header">
-    <span class="logo">◆</span>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#links">Links</a>
+    <a class="brand" href="#top">
+      <span class="brand-accent" aria-hidden="true"></span>
+      <span class="brand-lockup">
+        <span class="brand-name">ABHA</span>
+        <span class="brand-tagline">Fish fry masala</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#products">Fish fry range</a>
+      <a href="#story">Why ABHA</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <a class="btn btn-outline header-cta" href="#products">View blends</a>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
-      <p class="eyebrow">Static site · GitHub Pages</p>
-      <h1>Hello, this is your new home on the web.</h1>
-      <p class="lead">
-        Edit <code>index.html</code> and <code>styles.css</code> in this folder, push to GitHub,
-        and your site updates automatically.
-      </p>
-      <a class="btn" href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages docs</a>
+      <div class="hero-copy">
+        <p class="eyebrow">Fish fry specialists · Crisp every time</p>
+        <h1>Crispy fish fry, <span class="hero-accent">full flavour</span>.</h1>
+        <p class="lead">
+          ABHA Fish Fry Masala is made for coating fresh fish—aroma, colour, and bite in one rub.
+          Rest briefly, shallow-fry: golden crust outside, tender flakes inside.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">Shop fish fry masala</a>
+          <a class="btn btn-ghost" href="#story">How we blend it</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img
+          class="hero-photo"
+          src="https://images.unsplash.com/photo-1673436977947-0787164a9abc?auto=format&amp;fit=crop&amp;w=1200&amp;h=540&amp;q=80"
+          srcset="https://images.unsplash.com/photo-1673436977947-0787164a9abc?auto=format&amp;fit=crop&amp;w=800&amp;h=400&amp;q=80 800w, https://images.unsplash.com/photo-1673436977947-0787164a9abc?auto=format&amp;fit=crop&amp;w=1200&amp;h=540&amp;q=80 1200w"
+          sizes="(min-width: 900px) 50vw, 100vw"
+          width="1200"
+          height="540"
+          alt="Golden fried fish fillet with lemon on a plate"
+          loading="eager"
+          decoding="async"
+        />
+        <div class="hero-card hero-card--overlay">
+          <span class="hero-card-label">Flagship</span>
+          <span class="hero-card-title">Original Fish Fry Masala</span>
+          <span class="hero-card-meta">Coats clean &amp; fries crisp · restaurant-style</span>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>
-        This is a single-page static site: no server code, just HTML, CSS, and optional JavaScript.
-        GitHub serves these files from a branch (usually <code>main</code> or <code>gh-pages</code>) for free.
-      </p>
-    </section>
-
-    <section id="links" class="card">
-      <h2>Quick edits</h2>
-      <ul class="list">
-        <li>Change the title and hero text in <code>index.html</code>.</li>
-        <li>Tweak colors and spacing in <code>styles.css</code> (<code>--accent</code>, <code>--bg</code>).</li>
-        <li>Add more pages: create <code>about.html</code> and link to it from the nav.</li>
+    <section id="products" class="section products">
+      <div class="section-head">
+        <h2>Fish fry masala range</h2>
+        <p>Blends for shallow fry, rava fry, and tawa roasts—same fish fry masala recipe in every pack.</p>
+      </div>
+      <ul class="product-grid">
+        <li class="product-card">
+          <div class="product-media">
+            <img
+              src="https://images.unsplash.com/photo-1665401015549-712c0dc5ef85?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=80"
+              width="800"
+              height="600"
+              alt="Fried fish on a plate with lemon wedges—home-style fish fry"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="product-badge">Bestseller</div>
+          </div>
+          <div class="product-body">
+            <h3>ABHA Original Fish Fry Masala</h3>
+            <p>Balanced chilli, coriander, and toasted notes for everyday fish fry. Works with pomfret, seer, prawns, and squid rings.</p>
+            <span class="product-note">200g · All-purpose fish fry</span>
+          </div>
+        </li>
+        <li class="product-card">
+          <div class="product-media">
+            <img
+              src="https://images.unsplash.com/photo-1583815950467-e7b26a5b56b3?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=80"
+              width="800"
+              height="600"
+              alt="Crispy golden fried seafood on a dark tray"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="product-body">
+            <h3>ABHA Spicy Fish Fry Masala</h3>
+            <p>Extra heat and black pepper kick for those who like a fiery crust. Great with surmai, kingfish, and river fish.</p>
+            <span class="product-note">200g · Hot fish fry rub</span>
+          </div>
+        </li>
+        <li class="product-card">
+          <div class="product-media">
+            <img
+              src="https://images.unsplash.com/photo-1565733618599-cb82f14f34ac?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=80"
+              width="800"
+              height="600"
+              alt="Assorted fried appetizers with a crunchy coating"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="product-body">
+            <h3>ABHA Rava Fish Fry Coating</h3>
+            <p>Fine masala cut for mixing with semolina—extra crunch for coastal-style rava fry without clumping.</p>
+            <span class="product-note">150g · Crispy rava fry</span>
+          </div>
+        </li>
+        <li class="product-card">
+          <div class="product-media">
+            <img
+              src="https://images.unsplash.com/photo-1613626630502-182579c0432c?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=80"
+              width="800"
+              height="600"
+              alt="Cooked fish on a plate beside a bowl of soup or curry"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="product-body">
+            <h3>ABHA Fish Curry Masala</h3>
+            <p>Depth for gravy and coconut-based curries—pair your fry night with a matching curry from the same kitchen.</p>
+            <span class="product-note">200g · Gravy blend</span>
+          </div>
+        </li>
       </ul>
+    </section>
+
+    <section class="section photo-strip" aria-label="Fish fry inspiration gallery">
+      <ul class="photo-strip-grid">
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1764397557799-258db31fe6a4?auto=format&amp;fit=crop&amp;w=700&amp;h=525&amp;q=80"
+            width="700"
+            height="525"
+            alt="Fried fish fillet with lemon and dipping sauce"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1719459341702-fc1c814d8dce?auto=format&amp;fit=crop&amp;w=700&amp;h=525&amp;q=80"
+            width="700"
+            height="525"
+            alt="Fish and chips style meal with fried fillet and sides"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1556814901-18c866c057da?auto=format&amp;fit=crop&amp;w=700&amp;h=525&amp;q=80"
+            width="700"
+            height="525"
+            alt="Fish cooking on a grill with char marks"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <section id="story" class="section story">
+      <div class="story-inner">
+        <div class="section-head section-head--tight">
+          <h2>Why ABHA Fish Fry Masala</h2>
+        </div>
+        <ul class="pillars">
+          <li>
+            <strong>Fish-first recipe</strong>
+            <span>Blended to go on seafood—not a generic masala relabelled. Acidity, salt balance, and heat tuned for fry.</span>
+          </li>
+          <li>
+            <strong>Even coating</strong>
+            <span>Particle size dialed in so the mix sticks in a thin, even layer and browns without burning.</span>
+          </li>
+          <li>
+            <strong>Honest packs</strong>
+            <span>No fillers: what you read on the pack is what goes in the bottle—consistent colour and aroma.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="cta-strip-inner">
+        <p class="cta-strip-title">Retail &amp; wholesale</p>
+        <p class="cta-strip-text">Shops, hotels, and caterers—ask for rate sheets, MOQs, and ABHA Fish Fry Masala distribution in your area.</p>
+        <a class="btn btn-primary" href="#contact">Enquire now</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>For orders, stockists, or export enquiries for ABHA Fish Fry Masala.</p>
+      </div>
+      <div class="contact-card">
+        <p><strong>Email</strong><br /><a href="mailto:hello@abhafishmasala.example">hello@abhafishmasala.example</a></p>
+        <p><strong>Add your details</strong><br />Phone, WhatsApp Business, factory or office address.</p>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Built for GitHub Pages · Replace this footer with yours.</p>
+    <p><span class="footer-brand">ABHA Fish Fry Masala</span> · Fish fry masala blends</p>
+    <p class="footer-meta">© <span id="year"></span> ABHA Fish Fry Masala. All rights reserved.</p>
+    <p class="footer-photos">Food photos from <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>—replace with your own product shots when ready.</p>
   </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
